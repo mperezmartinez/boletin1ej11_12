@@ -18,7 +18,7 @@ public class Boletin211_12 {
      */
     public static void main(String[] args) {
      
-      float soldo,ventas,comision,soldototal;
+      float soldo,ventas,comision,soldototal,irpf,soldofinal;
       int km, dias,transporte,dietas;
       
       System.out.println("Introduce Soldo Fixo :");
@@ -47,6 +47,12 @@ public class Boletin211_12 {
        
        System.out.println("SueldoBruto="+soldototal);
         
+       
+      irpf=(float) (soldototal*0.18); 
+      
+      soldofinal=soldototal-irpf-36;
+      
+      System.out.println("Sueldo Liquido="+soldofinal);
     }
     
 }
